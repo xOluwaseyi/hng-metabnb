@@ -13,8 +13,6 @@
 
   body {
     font-family: 'Red Rose', cursive, Tahoma, sans-serif;
-    color: #fff;
-    background-color: #1d2123;
   }
 
   a {
@@ -25,23 +23,4 @@
   li {
     list-style: none;
   }
-}
-
-@layer components {
-
-}
-
-@layer utilities {
-  .noSelect {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.noSelect:focus {
-    outline: none !important;
-}
 }
