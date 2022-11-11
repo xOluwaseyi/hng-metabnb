@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import HeroSection from "../components/Home/HeroSection";
 
 const Home = () => {
   return (
     <section>
-      <p className="text-red-500">Home</p>
+      <HeroSection />
     </section>
   );
 };
