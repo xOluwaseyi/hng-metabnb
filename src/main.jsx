@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import ErrorPage from "./ErrorPage";
-import Layout from "../src/components/Layout"
+import Layout from "../src/components/UI/Layout"
 import Home from "../src/routes/Home";
 import PlaceToStay from "../src/routes/PlaceToStay";
 

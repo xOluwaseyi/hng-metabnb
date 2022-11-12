@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/metabnb-logo.png";
-import LogoText from "../assets/metabnb-logotext.png";
+import Logo from "../../assets/metabnb-logo.png";
+import LogoText from "../../assets/metabnb-logotext.png";
 
 const Header = () => {
   return (

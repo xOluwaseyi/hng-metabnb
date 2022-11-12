@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets/metabnb-logo-w.png";
-import facebook from "../assets/facebook-icon.svg";
-import instagram from "../assets/instagram-icon.svg";
-import twitter from "../assets/twitter-icon.svg";
+import Logo from "../../assets/metabnb-logo-w.png";
+import facebook from "../../assets/facebook-icon.svg";
+import instagram from "../../assets/instagram-icon.svg";
+import twitter from "../../assets/twitter-icon.svg";
 
 const Footer = () => {
   return (
