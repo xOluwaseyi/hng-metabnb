@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/metabnb-logo.svg";
 import LogoText from "../../assets/metabnb-logotext.png";
-
+import ConnectWallet from "../Home/ConnectWallet";
+import BgOverlay from "./BgOverlay";
 
 const Header = () => {
+  const [showWallets, setShowWallets] = useState(false);
+
+  const handleShowWallets = () => {
+    setShowWallets(!showWallets)
+  };
+
   return (
     <header className="w-[85%] mx-auto py-8 flex items-center justify-between">
       <div>
@@ -23,9 +30,15 @@ const Header = () => {
         <Link to="#">Community</Link>
       </nav>
 
-      <button className="bg-[#A02279] px-5 py-2 text-white rounded-xl">
+      <button
+        onClick={handleShowWallets}
+        className="bg-[#A02279] px-5 py-2 text-white rounded-xl"
+      >
         Connect wallet
       </button>
+
+      {showWallets && <BgOverlay handleShowWallets={handleShowWallets} />}
+      {showWallets && <ConnectWallet handleShowWallets={handleShowWallets} />}
     </header>
   );
 };
