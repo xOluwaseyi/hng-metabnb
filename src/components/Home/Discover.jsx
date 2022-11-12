@@ -1,5 +1,9 @@
 import React from "react";
 import DiscoveryImage from "../../assets/DiscoveryImages/DiscoveryImage.png";
+import DiscoveryImage1 from "../../assets/DiscoveryImages/DiscoveryImage1.png";
+import DiscoveryImage2 from "../../assets/DiscoveryImages/DiscoveryImage2.png";
+import DiscoveryImage3 from "../../assets/DiscoveryImages/DiscoveryImage3.png";
+
 
 const Discover = () => {
   return (
@@ -17,8 +21,10 @@ const Discover = () => {
           </button>
         </div>
       </div>
-      <div>
-        <img src={DiscoveryImage} alt="discovery-image" width={600} />
+      <div className="w-[50%] relative h-[570px] ">
+        <img src={DiscoveryImage1} alt="discovery-image" width={400} className="absolute right-[20px]" />
+        <img src={DiscoveryImage2} alt="discovery-image" width={400} className="absolute top-[150px] left-[80px] " />
+        <img src={DiscoveryImage3} alt="discovery-image" width={400} className="absolute top-[250px] right-[0px]" />
       </div>
     </section>
   );
