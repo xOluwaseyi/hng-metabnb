@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/metabnb-logo.png";
+import Logo from "../../assets/metabnb-logo.svg";
 import LogoText from "../../assets/metabnb-logotext.png";
+
 
 const Header = () => {
   return (
     <header className="w-[85%] mx-auto py-8 flex items-center justify-between">
-      <img src={Logo} alt="logo" />
+      <div>
+        <img src={Logo} alt="logo" className="inline" />
+        <img
+          src={LogoText}
+          alt="logo"
+          className="inline-block h-[30px] w-auto ml-1"
+        />
+      </div>
 
       <nav className="flex gap-16">
         <Link to="/">Home</Link>

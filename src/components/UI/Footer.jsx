@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../../assets/metabnb-logo-w.png";
+import Logo from "../../assets/metabnb-logo-w.svg";
+import LogoText from "../../assets/metabnb-white-text.png";
 import facebook from "../../assets/facebook-icon.svg";
 import instagram from "../../assets/instagram-icon.svg";
 import twitter from "../../assets/twitter-icon.svg";
@@ -9,7 +10,10 @@ const Footer = () => {
     <footer className="bg-[#1D1D1E] py-14 text-white flex justify-around">
       {/* first div */}
       <div>
-        <img src={Logo} alt="logo" width="200" />
+        <div >
+          <img src={Logo} alt="logo" className="inline" />
+          <img src={LogoText} alt="logo" className="inline-block h-[30px] w-auto ml-1" />
+        </div>
 
         <div className="mt-20 mb-10 flex gap-5">
           <img src={facebook} alt="facebook" />
