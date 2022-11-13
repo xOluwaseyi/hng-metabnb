@@ -9,6 +9,7 @@ const AdventureInspiration = () => {
         Inspiration for your next adventure
       </h1>
 
+      {/* images */}
       <ImagesGrid images={AdventureImages} />
     </section>
   );

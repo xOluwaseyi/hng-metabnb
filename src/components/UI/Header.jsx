@@ -10,9 +10,9 @@ const Header = () => {
   const [showWallets, setShowWallets] = useState(false);
   const [nav, setNav] = useState(false);
 
-    const showNav = () => {
-      setNav(!nav);
-    };
+  const showNav = () => {
+    setNav(!nav);
+  };
 
   const handleShowWallets = () => {
     setShowWallets(!showWallets);
@@ -21,6 +21,7 @@ const Header = () => {
 
   return (
     <header className="w-[85%] mx-auto py-8 flex items-center justify-between">
+    {/* logo */}
       <div>
         <img src={Logo} alt="logo" className="inline h-[30px] md:h-auto" />
         <img
@@ -30,6 +31,7 @@ const Header = () => {
         />
       </div>
 
+      {/* hamburger */}
       <i
         className="fa fa-bars lg:hidden text-xl cursor-pointer"
         onClick={showNav}
@@ -56,12 +58,14 @@ const Header = () => {
       {nav && <BgOverlay bg_function={showNav} />}
 
       {/* mobile and tab nav */}
+      {/* using react portal for semantic reasons since this is going on top of the content */}
       {ReactDOM.createPortal(
         <nav
           className={`mobileNav ${
             nav ? "right-[0px] w-[70%]" : "right-[-100vw] w-full"
           }`}
         >
+        {/* close button */}
           <i
             className="fa fa-times text-xl text-right cursor-pointer"
             onClick={showNav}

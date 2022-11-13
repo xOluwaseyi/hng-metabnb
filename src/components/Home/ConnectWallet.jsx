@@ -20,6 +20,7 @@ const WalletType = [
 const ConnectWallet = ({ handleShowWallets }) => {
   return (
     <>
+    {/* using react portal for semantic reasons since this is going on top of the content */}
       {ReactDOM.createPortal(
         <div className="w-[300px] md:w-[400px] fixed top-[20%] right-[50%] translate-x-2/4 translate-y-2/4 bg-white flex flex-col z-50 rounded-lg">
           <div className="h-full py-4 px-5 flex justify-between border-b-2 border-gray-300">

@@ -11,7 +11,7 @@ const PlaceToStay = () => {
           <Link to="#">Restaurant</Link>
           <Link to="#">Cottage</Link>
           <Link to="#">Castle</Link>
-          <Link to="#">Fantasticity</Link>
+          <Link to="#">Fantast city</Link>
           <Link to="#">Beach</Link>
           <Link to="#">Carbins</Link>
           <Link to="#">Off-grid</Link>

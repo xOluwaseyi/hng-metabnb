@@ -8,7 +8,7 @@ import twitter from "../../assets/twitter-icon.svg";
 const Footer = () => {
   return (
     <footer className="bg-[#1D1D1E] py-14 text-white flex flex-col md:flex-row justify-around items-center md:items-start">
-      {/* first div */}
+      {/* footer details */}
       <div className="mb-10 md:mb-0">
         <div>
           <img src={Logo} alt="logo" className="inline" />
@@ -23,9 +23,10 @@ const Footer = () => {
 
         <p className="text-center md:text-start">&copy; 2022 Metabnb </p>
       </div>
-      {/* second div */}
+
+      {/* community */}
       <div>
-        <h3 className="text-xl font-extrabold">Community</h3>
+        <h3 className="text-xl font-extrabold">Community:</h3>
         <ul className="flex flex-col items-center md:items-start gap-3 mt-3 font-light text-lg">
           <li>NFT</li>
           <li>Tokens</li>
@@ -34,9 +35,9 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* third div */}
+      {/* places */}
       <div className="my-10 md:my-0">
-        <h3 className="text-xl font-extrabold text-center md:text-start">Places</h3>
+        <h3 className="text-xl font-extrabold text-center md:text-start">Places:</h3>
         <ul className="flex flex-col items-center md:items-start gap-3 mt-3 font-light text-lg">
           <li>Castle</li>
           <li>Farms</li>
@@ -45,9 +46,9 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* fourth div */}
+      {/* about us */}
       <div>
-        <h3 className="text-xl font-extrabold">About us</h3>
+        <h3 className="text-xl font-extrabold">About us:</h3>
         <ul className="flex flex-col items-center md:items-start gap-3 mt-3 font-light text-lg">
           <li>Road map</li>
           <li>Creators</li>
