@@ -12,14 +12,14 @@ const ImagesGrid = ({ images }) => {
   }, [images]);
 
   return (
-    <div className="w-[85%] mx-auto grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-y-5">
+    <div className="w-[90%] mx-auto grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-5">
       {imagesArray.map((image) => {
         return (
           <div
             key={image.id}
-            className="border-2 w-[300px] py-2 rounded-2xl flex flex-col items-center gap-2"
+            className="border-2 py-2 w-[85%] lg:w-[90%] rounded-2xl flex flex-col items-center gap-2"
           >
-            <div className="relative w-[270px] h-[275px] rounded-xl overflow-hidden">
+            <div className="relative w-[95%] h-[280px] rounded-xl overflow-hidden">
               <img
                 src={image.image}
                 alt="adventure-image"

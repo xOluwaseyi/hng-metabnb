@@ -24,3 +24,9 @@
     list-style: none;
   }
 }
+
+@layer components {
+    .mobileNav {
+    @apply fixed top-[0px] flex flex-col gap-y-8 p-8 h-[100vh] font-extrabold text-xl bg-white z-40 duration-1000 lg:hidden;
+  }
+}
