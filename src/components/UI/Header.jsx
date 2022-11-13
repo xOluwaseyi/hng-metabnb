@@ -22,11 +22,11 @@ const Header = () => {
   return (
     <header className="w-[85%] mx-auto py-8 flex items-center justify-between">
       <div>
-        <img src={Logo} alt="logo" className="inline" />
+        <img src={Logo} alt="logo" className="inline h-[30px] md:h-auto" />
         <img
           src={LogoText}
           alt="logo"
-          className="inline-block h-[30px] w-auto ml-1"
+          className="inline-block h-[20px] md:h-[30px] w-auto ml-1"
         />
       </div>
 
