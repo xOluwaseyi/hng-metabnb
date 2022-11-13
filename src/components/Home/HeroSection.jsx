@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <>
       <main className="w-[85%] mx-auto flex flex-col lg:flex-row gap-5 justify-between py-10">
-        {/* text */}
+        {/* landing page description */}
         <div className="w-full lg:w-[50%] my-auto">
           <h1 className="text-4xl md:text-5xl leading-snug">
             Rent a <span className="text-[#A02279] font-bold">Place</span> away
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* image */}
+        {/* landing page image */}
         <div className="flex justify-center gap-2">
           <div className="mt-24">
             <img src={img1} alt="img1" />
@@ -51,11 +51,23 @@ const HeroSection = () => {
         </div>
       </main>
 
-      {/* banner */}
+      {/* banner after the main page */}
       <section className="bg-[#A02279] py-3 flex justify-around items-center">
-        <img src={MBToken} alt="mbtoken" className="w-[90px] md:w-[150px] lg:w-auto" />
-        <img src={Metamask} alt="metamask" className="w-[90px] md:w-[150px] lg:w-auto" />
-        <img src={OpenSea} alt="opensea" className="w-[90px] md:w-[150px] lg:w-auto" />
+        <img
+          src={MBToken}
+          alt="mbtoken"
+          className="w-[90px] md:w-[150px] lg:w-auto"
+        />
+        <img
+          src={Metamask}
+          alt="metamask"
+          className="w-[90px] md:w-[150px] lg:w-auto"
+        />
+        <img
+          src={OpenSea}
+          alt="opensea"
+          className="w-[90px] md:w-[150px] lg:w-auto"
+        />
       </section>
     </>
   );

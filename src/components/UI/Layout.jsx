@@ -6,8 +6,10 @@ import Header from "./Header";
 const Layout = () => {
   return (
     <>
+      {/* layout component to make header and footer show across all pages */}
       <Header />
 
+      {/* content to be displayed */}
       <Outlet />
 
       <Footer />

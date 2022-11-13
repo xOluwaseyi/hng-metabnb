@@ -5,6 +5,7 @@ import heart from "../../assets/AdventureImages/heart.svg";
 const ImagesGrid = ({ images }) => {
   const [imagesArray, setImagesArray] = useState([]);
 
+  // to init images array
   useEffect(() => {
     if (images) {
       setImagesArray(images);
@@ -13,6 +14,7 @@ const ImagesGrid = ({ images }) => {
 
   return (
     <div className="w-[90%] mx-auto grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-5">
+    {/* this component is for the images grid and was created to make it resuable */}
       {imagesArray.map((image) => {
         return (
           <div
@@ -28,19 +30,19 @@ const ImagesGrid = ({ images }) => {
               <img src={heart} alt="heart" className="absolute top-3 right-3" />
             </div>
 
-            <div className="flex justify-between w-[90%] text-[11px] text-[#434343]">
+            <div className="flex justify-between w-[90%] text-sm lg:text-[11px] text-[#434343]">
               <p>Desert King</p>
               <p className="font-bold">1MBT per night</p>
             </div>
 
-            <div className="flex justify-between w-[90%] text-[11px] text-[#434343]">
+            <div className="flex justify-between w-[90%] text-sm lg:text-[11px] text-[#434343]">
               <p>2345km away</p>
               <p>available for 2 weeks stay</p>
             </div>
 
             <div className="flex gap-3 w-[90%] mt-1">
               {[1, 2, 3, 4, 5].map((starIndex) => {
-                return <img key={starIndex} src={star} alt="star" width={8} />;
+                return <img key={starIndex} src={star} alt="star" className="w-[10px]" />;
               })}
             </div>
           </div>
