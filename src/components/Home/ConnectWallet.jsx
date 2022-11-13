@@ -21,7 +21,7 @@ const ConnectWallet = ({ handleShowWallets }) => {
   return (
     <>
       {ReactDOM.createPortal(
-        <div className="fixed top-[20%] right-[50%] translate-x-2/4 translate-y-2/4 bg-white w-[30vw] flex flex-col z-50 rounded-lg ">
+        <div className="w-[300px] md:w-[400px] fixed top-[20%] right-[50%] translate-x-2/4 translate-y-2/4 bg-white flex flex-col z-50 rounded-lg">
           <div className="h-full py-4 px-5 flex justify-between border-b-2 border-gray-300">
             <h1 className="font-bold">Connect Wallet</h1>
             <p className="cursor-pointer" onClick={handleShowWallets}>X</p>

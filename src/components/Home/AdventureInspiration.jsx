@@ -1,5 +1,5 @@
 import React from "react";
-import { AdventureImages } from "./AdventureImages";
+import { AdventureImages } from "../../assets/AdventureImages/AdventureImages";
 import ImagesGrid from "../UI/ImagesGrid";
 
 const AdventureInspiration = () => {

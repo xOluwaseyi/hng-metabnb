@@ -7,8 +7,7 @@ import { PlacesImages } from '../assets/PlaceToStayAssets/PlacesImages';
 const PlaceToStay = () => {
   return (
     <section className="pb-10">
-      <div className="w-[85%] mx-auto flex justify-evenly items-center mt-4 mb-10">
-        <nav className="flex gap-14 text-lg">
+        <nav className="w-[85%] mx-auto justify-between mt-4 mb-10 flex flex-wrap items-center gap-4 lg:gap-14 text-lg">
           <Link to="#">Restaurant</Link>
           <Link to="#">Cottage</Link>
           <Link to="#">Castle</Link>
@@ -17,13 +16,12 @@ const PlaceToStay = () => {
           <Link to="#">Carbins</Link>
           <Link to="#">Off-grid</Link>
           <Link to="#">Farm</Link>
+          
+          <div className="border-2 px-3 py-2 rounded-lg flex gap-5">
+            <p>Location</p>
+            <img src={Settings} alt="settingd" />
+          </div>
         </nav>
-
-        <div className="border-2 px-3 py-2 rounded-lg flex gap-5">
-          <p>Location</p>
-          <img src={Settings} alt="settingd" />
-        </div>
-      </div>
 
       <ImagesGrid images={PlacesImages} />
     </section>
