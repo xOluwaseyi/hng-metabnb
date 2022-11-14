@@ -22,10 +22,10 @@ const Discover = () => {
       </div>
 
       {/* discover images */}
-      <div className="w-[90%] lg:w-[50%] mt-10 lg:mt-0 relative h-[570px] ">
+      <div className="w-[90%] md:w-[70%] lg:w-[50%] mt-10 lg:mt-0 relative h-[570px] ">
         <img src={DiscoveryImage1} alt="discovery-image" className="absolute right-[20px] w-[350px] lg:w-[400px]" />
         <img src={DiscoveryImage2} alt="discovery-image" className="absolute top-[140px] lg:top-[150px] lg:left-[80px] w-[350px] lg:w-[400px]" />
-        <img src={DiscoveryImage3} alt="discovery-image"className="absolute top-[320px] lg:top-[250px] right-[0px] w-[350px] lg:w-[400px]" />
+        <img src={DiscoveryImage3} alt="discovery-image"className="absolute top-[320px] md:top-[250px] right-[0px] w-[350px] lg:w-[400px]" />
       </div>
     </section>
   );
